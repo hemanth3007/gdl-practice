@@ -1,5 +1,5 @@
 pipeline {
-	agents any
+	agent any
 	tools {
 		gradle 'gradle'
 		jdk 'jdk'
@@ -26,7 +26,7 @@ pipeline {
 			}
 		}
 	}
-	posts {
+	post {
 		success {
 			echo 'Build and Deployment successful'
 		}
